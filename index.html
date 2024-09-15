@@ -1,0 +1,68 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <h1>Jimmy's Diner</h1>
+            <p>The best burgers and pizzas in town</p>
+        </header>
+        <section id="products" class="product-section"></section>
+        <section class="order-container">
+            <section id="order"></section>
+        </section>
+        <section class="form-section" id="form-section">
+            <form action="POST">
+                <div class="icon-container"><i class="fa-solid fa-xmark"></i></div>
+                <h3>Enter Card Details</h3>
+                <div class="input-fields">
+                    <div class="input-field_container">
+                        <label for="username">Name</label>
+                        <input
+                        type="text"
+                        placeholder="Rick James"
+                        id="username"
+                        required 
+                        name="username"
+                        minlength="3">
+                    </div>
+                    <div class="input-field_container">
+                        <label for="card-number">Card Number</label>
+                        <input
+                        type="tel"
+                        inputmode="numeric"
+                        pattern="[0-9\s]{13, 19}"
+                        placeholder="0000 0000 0000 0000"
+                        required
+                        name="card-number"
+                        maxlength="19"
+                        id="card-number">
+                    </div>
+                    
+                    <div class="input-field_container">
+                        <label for="cvv">CVV</label>
+                        <input
+                        type="password"
+                        placeholder="123"
+                        required
+                        maxlength="3"
+                        name="cvv"
+                        id="cvv">
+                    </div>
+                    
+                </div>
+                
+                <button type="submit" id="pay-btn" data-pay-btn="pay">Pay</button>
+            </form>
+
+            <section class="overlay" id="overlay"></section>
+        </section>
+        
+	    <script src="index.js" type="module"></script>
+    </body>
+</html>
+

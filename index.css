@@ -1,0 +1,257 @@
+body {
+    margin: 0px;
+    font-family: 'Smythe', system-ui;
+    position: relative;
+} 
+
+/* Typography */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.125rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 4px;
+    color: #0d0d0d;
+}
+
+p {
+    margin: 4px;
+    color: #323232;
+}
+
+header h1, header p {
+    color: #fff;
+}
+
+.product-amount {
+    color: #737373;
+}
+
+.added-product_details p {
+    margin: 0;
+}
+
+
+/* Components */
+
+button {
+    background-color: #16DB99;
+    color: #fff;
+    font-size: 1.125rem;
+    border: none;
+    padding: 12px 24px;
+    font-family: inherit;
+    width: 100%;
+}
+
+.add-btn {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: 0.5px solid rgb(128, 128, 128);
+    background-color: #fff;
+    font-size: 2rem;
+    color: #4b4b4b;
+    font-weight: 400;
+    padding: 0;
+}
+
+.remove-btn {
+    background: none;
+    color: #737373;
+    border: none;
+    padding: 0;
+    width: 0;
+    font-size: 0.875rem;
+    text-decoration: underline;
+}
+
+.remove-btn:hover {
+    color: #16DB99;
+}
+
+
+/* Layout */
+
+header {
+    background: center url('./images/ferks-guare-KEZdWfYD-ow-unsplash\ 1.png');
+}
+
+header{
+    padding: 50px;
+}
+
+.product-section {
+    padding: 24px 50px;
+}
+
+.product {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 0.5px solid rgb(135, 135, 135);
+}
+
+.product-info {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.product-image {
+    width: 120px;
+}
+
+.product-info_text {
+    margin-left: 16px;
+}
+
+.product-info_text p {
+    margin-left: 0px;
+}
+
+.order-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+#order {
+    display: none;
+    margin: 40px 50px;
+    text-align: center;
+    width: 50%;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background: #e9fef9;
+    border-radius: 4px;
+}
+
+.added-product {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.added-product_details {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.added-product_total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+    background-color: #b2fee5;
+}
+
+.added-product_total h4,
+.added-product_total p {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.added-product,
+.added-product_total,
+.order-btn-container {
+    padding-right: 64px;
+    padding-left: 64px;
+}
+
+/* Overlay */
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.247);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    display: none;
+}
+
+/* Form Styles */
+.form-section {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form {
+    width: 30%;
+    text-align: center;
+    padding: 0px 40px 40px 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.108);
+    position: absolute;
+    top: 20%;
+    background-color: white;
+    z-index: 2;
+    
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 12px;
+    padding-bottom: 8px;
+}
+
+.input-field_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: 16px;
+}
+
+input {
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid rgba(46, 46, 46, 0.631);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+input::placeholder {
+    color: #c4c4c4;
+}
+
+input:focus {
+    border: 1.5px solid #097d56;
+    outline: none;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 24px;
+    /* padding-top: 16px; */
+}
+
+i {
+    color: #097d56;
+    font-size: 24px;
+    position: relative;
+    top: 16px;
+    right: -16px;
+}
